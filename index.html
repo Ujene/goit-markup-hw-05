@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-05</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -72,7 +72,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
         </div>
       </section>
       <!-- Features -->
@@ -136,24 +136,27 @@
         <div class="container">
           <h2 class="projects-title">Чем мы занимаемся</h2>
           <ul class="grid-set list-pad">
-            <li class="grid-set-item">
+            <li class="grid-set-item itms-list">
               <img
                 src="./images/box-1.jpg"
                 alt="Box1"
                 width="370"
                 height="294"
               />
+              <p class="project-overlay">Десктопные приложения</p>
             </li>
-            <li class="grid-set-item">
+            <li class="grid-set-item itms-list">
               <img
                 src="./images/box-2.jpg"
                 alt="Box2"
                 width="370"
                 height="294"
               />
+              <p class="project-overlay">Мобильные приложения</p>
             </li>
-            <li class="grid-set-item">
+            <li class="grid-set-item itms-list">
               <img src="./images/img.jpg" alt="Box3" width="370" height="294" />
+              <p class="project-overlay">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -222,9 +225,9 @@
                       </a>
                     </li>
                   </ul>
-                  <!-- Social Links Icons End -->
-                </div>
-              </li>
+					</div>
+				</li>
+				<!-- Social Links Icons End -->
               <li class="grid-set-item team-card">
                 <img src="./images/repina.jpg" alt="Olga Repina" width="270" />
                 <div class="team-card-pdg">
@@ -408,7 +411,7 @@
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list grid-set">
             <li class="clients-list-item grid-set-item">
-              <a class="clients-list-link ">
+              <a class="clients-list-link">
                 <svg class="icon-clients">
                   <use href="./images/ico/icons.svg#icon-client-1"></use>
                 </svg>
@@ -519,5 +522,18 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="icon-cls-btn">
+          <svg class="icon-close">
+            <use
+              href="./images/ico/icons.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+	 <script src="./js/modal.js"></script>
   </body>
 </html>
