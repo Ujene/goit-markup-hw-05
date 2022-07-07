@@ -817,6 +817,10 @@ transform: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
+.off_overflow{
+    overflow: hidden;
+}
+
 .backdrop.is-hidden{
 	opacity: 0;
 	pointer-events: none;
